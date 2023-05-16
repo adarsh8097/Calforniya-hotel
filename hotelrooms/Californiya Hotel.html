@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)http://localhost:81/phpProject/hotelmanage/add_rooms.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Californiya Hotel</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./Californiya Hotel_files/bootstrap.min.css">
+  <script src="./Californiya Hotel_files/jquery.min.js.download"></script>
+  <script src="./Californiya Hotel_files/bootstrap.min.js.download"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="http://localhost:81/phpProject/hotelmanage/admin.php">Californiya hotel </a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="http://localhost:81/phpProject/hotelmanage/admin.php">Home</a></li>
+      <li><a href="http://localhost:81/phpProject/hotelmanage/add_rooms.php#">Enquiry </a></li>
+      <li><a href="http://localhost:81/phpProject/hotelmanage/add_room_form.php">Rooms </a></li>
+	  <li><a href="http://localhost:81/phpProject/hotelmanage/add_rooms.php">Add_Rooms </a></li>
+	  <li><a href="http://localhost:81/phpProject/hotelmanage/add_rooms.php#"> Booking</a></li>
+	  <li class=""><a href="http://localhost:81/phpProject/hotelmanage/contact.php">ContactUs</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="http://localhost:81/phpProject/hotelmanage/add_rooms.php#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="http://localhost:81/phpProject/hotelmanage/add_rooms.php#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+<!--------Table--->
+  
+<div class="container">
+ <center> <h2>Hotel Rooms</h2>
+  <p><b>Hotel Provided differnt room :</b></p>  </center>          
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>id</th>
+		<th>Rooms Type</th>
+        <th> Room Price</th>
+        <th>Room image</th>
+		<th>Delete</th>
+      </tr>
+    </thead>
+	    <tbody>
+      <tr>
+        <td>5</td>
+        <td>Dubble room</td>
+        <td>23948300</td>
+		<td> h11.jpeg</td>
+		<td><a href="http://localhost:81/phpProject/hotelmanage/deleteroom.php?rid=5" onclick="return cnf();"><span style="color:red">Delete</span></a></td>
+      </tr>
+	     </tbody><tbody>
+      <tr>
+        <td>6</td>
+        <td>Single room</td>
+        <td>1800</td>
+		<td> h14.jpeg</td>
+		<td><a href="http://localhost:81/phpProject/hotelmanage/deleteroom.php?rid=6" onclick="return cnf();"><span style="color:red">Delete</span></a></td>
+      </tr>
+	     </tbody><tbody>
+      <tr>
+        <td>7</td>
+        <td>Dubble room</td>
+        <td>3500</td>
+		<td> h16.jpeg</td>
+		<td><a href="http://localhost:81/phpProject/hotelmanage/deleteroom.php?rid=7" onclick="return cnf();"><span style="color:red">Delete</span></a></td>
+      </tr>
+	     </tbody><tbody>
+      <tr>
+        <td>8</td>
+        <td>Delux room</td>
+        <td>8000</td>
+		<td> h18.jpeg</td>
+		<td><a href="http://localhost:81/phpProject/hotelmanage/deleteroom.php?rid=8" onclick="return cnf();"><span style="color:red">Delete</span></a></td>
+      </tr>
+	       
+    </tbody>
+  </table>
+</div>
+<script>
+function cnf(){
+	$r=confirm('Are you sure to delete the room.');
+	return $r;
+}
+</script>
+
+
+</body></html>
